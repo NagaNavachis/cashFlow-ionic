@@ -1,0 +1,7 @@
+{
+  "name": "cashFlow",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
