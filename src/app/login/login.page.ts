@@ -17,7 +17,7 @@ export class LoginPage {
   ) {}
 
   async login() {
-    if (this.username === 'user' && this.password === '123456') {
+    if (this.username === 'admin' && this.password === '123456') {
       this.router.navigate(['/home']);
     } else {
       // Show a snackbar

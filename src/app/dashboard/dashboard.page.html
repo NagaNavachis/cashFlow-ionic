@@ -6,7 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
+<ion-content class="ion-padding" (ionViewWillEnter)="initializeCharts()">
   <ion-card>
     <ion-card-header>
       Cash-Flow
@@ -22,6 +22,45 @@
     </ion-card-header>
     <ion-card-content>
       <canvas id="locationWiseChart"></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Add canvas for dayReceipts chart -->
+  <ion-card>
+    <ion-card-header>
+     Day Receipts
+    </ion-card-header>
+    <ion-card-content>
+      <canvas id="dayReceipts"></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Add canvas for dayPayments chart -->
+  <ion-card>
+    <ion-card-header>
+     Day Payments
+    </ion-card-header>
+    <ion-card-content>
+      <canvas id="dayPayments"></canvas>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header>
+      Payments Month-Wise
+    </ion-card-header>
+    <ion-card-content>
+      <canvas id="paymentsMonthWiseChart"></canvas>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card>
+    <ion-card-header>
+     Receipts Month-Wise
+    </ion-card-header>
+    <ion-card-content>
+      <canvas id="receiptsMonthWiseChart"></canvas>
     </ion-card-content>
   </ion-card>
 </ion-content>
